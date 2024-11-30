@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic_didone</item>
+        <item>@font/archivo</item>
+        <item>@font/frank_ruhl_libre</item>
+        <item>@font/frank_ruhl_libre_medium</item>
+        <item>@font/gilda_display</item>
+    </array>
+</resources>

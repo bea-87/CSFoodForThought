@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:clickable="true"
+    tools:context=".RecipeDisplays">
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chicken_pasta_bake" />
+
+    <TextView
+        android:id="@+id/recipename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Pasta"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/RecipeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipename"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:text="10 minutes"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/likeRecipeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="foodForThought"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

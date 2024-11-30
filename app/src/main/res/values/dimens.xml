@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="popup_width">300dp</dimen> <!-- Adjust the value (width) as needed -->
+</resources>

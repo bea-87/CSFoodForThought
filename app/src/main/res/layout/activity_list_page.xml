@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPage">
+
+    <ImageButton
+        android:id="@+id/LikedPageButton"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#252525"
+        android:contentDescription="foodForThought"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/likedhearticon" />
+
+
+    <ImageButton
+        android:id="@+id/ListPageButton"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#a1a1a1"
+        android:contentDescription="shoppingList"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shoppingicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toEndOf="@+id/HomePageButton"
+        app:layout_constraintEnd_toStartOf="@+id/LikedPageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodforthoughtlogo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/HomePageButton"
+        app:layout_constraintStart_toEndOf="@+id/ListPageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodforthoughtlogoinverted" />
+
+    <Button
+        android:id="@+id/HomePageButton"
+        android:layout_width="133dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/clearbutton"
+        android:backgroundTintMode="multiply"
+        android:paddingLeft="12dp"
+        android:paddingTop="2dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="2dp"
+        android:text="Home"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:backgroundTint="#FFF9C4"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shoppingListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="My Shopping List"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListPageButton" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingListTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/uncheckedItemsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/checkedItemsTitle"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="197dp"
+                android:fontFamily="@font/frank_ruhl_libre"
+                android:text="Checked Items" />
+
+            <Button
+                android:id="@+id/clearCheckedItemsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/clearbutton"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:text="Clear"
+                android:textColor="#000000"
+                android:translationY="-30dp"
+                app:backgroundTint="@null" />
+
+            <LinearLayout
+                android:id="@+id/checkedItemsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
